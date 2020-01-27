@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:orientation="horizontal"
+        android:padding="25dp"
+        android:weightSum="20">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="85dp"
+            android:layout_weight="10">
+
+            <TextView
+                android:id="@+id/tvPlayer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/player01"
+                android:textColor="#fafafa"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/tvPlayer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPlayer1"
+                android:text="@string/player02"
+                android:textColor="#fafafa"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:layout_gravity="start"
+            android:layout_weight="6"
+            android:background="@drawable/rectangle_button"
+            android:text="@string/reset"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:weightSum="30"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/button_00"
+            style="@style/button_style" />
+
+        <Button
+            android:id="@+id/button_01"
+            style="@style/button_style"
+            />
+
+        <Button
+            android:id="@+id/button_02"
+            style="@style/button_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="30"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/button_10"
+            style="@style/button_style" />
+
+        <Button
+            android:id="@+id/button_11"
+            style="@style/button_style" />
+
+        <Button
+            android:id="@+id/button_12"
+            style="@style/button_style" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="30"
+        android:padding="3dp">
+
+        <Button
+            android:id="@+id/button_20"
+            style="@style/button_style" />
+
+        <Button
+            android:id="@+id/button_21"
+            style="@style/button_style" />
+
+        <Button
+            android:id="@+id/button_22"
+            style="@style/button_style" />
+    </LinearLayout>
+
+
+</LinearLayout>
